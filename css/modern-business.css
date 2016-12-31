@@ -91,3 +91,7 @@ footer {
         height: 70%;
     }
 }
+
+.img-responsive{
+    max-width: 35%;
+}
