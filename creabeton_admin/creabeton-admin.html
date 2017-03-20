@@ -1,0 +1,184 @@
+<!doctype html>
+<html style="height: 100%; margin: 0px; padding: 0px; border: 0; vertical-align: baseline; font-family: 'roboto', sans-serif; font-size: 14px;">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Creabeton admin</title>
+    <style media="all" type="text/css">
+        @media screen and (max-width: 600px) {
+            .table-responsive {
+                width: 100%;
+                margin-bottom: 18px;
+                overflow-y: hidden;
+                border: 1px solid #f2f2f2;
+            }
+            .table-responsive > .table {
+                margin-bottom: 0;
+            }
+            .table-responsive > .table > thead > tr > td,
+            .table-responsive > .table > thead > tr > th,
+            .table-responsive > .table > tbody > tr > td,
+            .table-responsive > .table > tbody > tr > th,
+            .table-responsive > .table > tfoot > tr > td,
+            .table-responsive > .table > tfoot > tr > th {
+                white-space: nowrap;
+            }
+            .table-responsive > .table-bordered {
+                border: 0;
+            }
+            .table-responsive > .table-bordered > thead > tr > td:first-child,
+            .table-responsive > .table-bordered > thead > tr > th:first-child,
+            .table-responsive > .table-bordered > tbody > tr > td:first-child,
+            .table-responsive > .table-bordered > tbody > tr > th:first-child,
+            .table-responsive > .table-bordered > tfoot > tr > td:first-child,
+            .table-responsive > .table-bordered > tfoot > tr > th:first-child {
+                border-left: 0;
+            }
+            .table-responsive > .table-bordered > thead > tr > td:last-child,
+            .table-responsive > .table-bordered > thead > tr > th:last-child,
+            .table-responsive > .table-bordered > tbody > tr > td:last-child,
+            .table-responsive > .table-bordered > tbody > tr > th:last-child,
+            .table-responsive > .table-bordered > tfoot > tr > td:last-child,
+            .table-responsive > .table-bordered > tfoot > tr > th:last-child {
+                border-right: 0;
+            }
+            .table-responsive > .table-bordered > tbody > tr:last-child > td,
+            .table-responsive > .table-bordered > tbody > tr:last-child > th,
+            .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+            .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+                border-bottom: 0;
+            }
+        }
+        
+        @media print {
+            md-sidenav,
+            .md-fab {
+                display: none !important;
+            }
+            md-content {
+                overflow: visible;
+            }
+            .print-full {
+                page-break-inside: avoid;
+            }
+            .full-height {
+                height: auto;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .mobile-fullwidth-dialog {
+                max-width: 100%;
+                min-height: 100%;
+            }
+        }
+        
+        @media screen and (min-width: 800px) {
+            .pad_h_100_desktop {
+                padding-left: 10rem !important;
+                padding-right: 10rem !important;
+            }
+        }
+        
+        @media screen and (max-width: 799px) {
+            .pad_h_100_desktop {
+                padding-left: 2.5rem !important;
+                padding-right: 2.5rem !important;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .mobile-display-block {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-weight: 400; vertical-align: baseline; margin: 0px; padding: 0px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #212121; font-family: 'roboto', sans-serif; min-width: 100%; font-size: 14px; line-height: 1.429; letter-spacing: 0.001em; background-color: #FFF; height: 100%; border: 0; width: 100% !important;">
+    <table class="mui-body container" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; vertical-align: baseline; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border: 0; border-collapse: collapse; font-size: 15px; height: 100%; color: #212121; font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'Trebuchet MS'; font-weight: 400; padding: 0; line-height: 1.429; letter-spacing: 0.001em; margin: 0 auto; width: 100%; background-color: #EEF3FA !important;"
+        width="100%" bgcolor="#EEF3FA !important" valign="baseline">
+        <tr>
+            <td style="hyphens: auto; padding: 0; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; text-align: left; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; border-collapse: collapse !important;"
+                align="left"></td>
+            <td style="hyphens: auto; padding: 0; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; text-align: left; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; border-collapse: collapse !important;"
+                align="left">
+                <div class="content" style="margin: 0; padding: 0; border: 0; vertical-align: baseline;">
+                    <center style="margin: 0; padding: 0; border: 0; vertical-align: baseline;">
+                        <!--[if mso]><table><tr><td class="mui-container-fixed"><![endif]-->
+                        <div class="mui-container mui-container--700" style="vertical-align: baseline; padding: 0; border: 0; clear: both; text-align: left; padding-left: 15px; display: block; padding-top: 15px; padding-bottom: 15px; max-width: 890px; margin: 0 auto; padding-right: 15px;">
+                            <!--    Content HTML goes here    -->
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; border-collapse: collapse; border: 0; margin: 0; padding: 0; vertical-align: baseline; background-color: #fff !important;"
+                                bgcolor="#fff !important" valign="baseline">
+                                <tr>
+                                    <td class="mui-panel" style="mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; mso-table-lspace: 0pt; text-align: left; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding: 50px; border-right: 1px solid #e6e6e6; border-radius: 0; background-color: #FFF; border-top: 1px solid #ededed; border-left: 1px solid #e6e6e6; border-bottom: 2px solid #d4d4d4; border-collapse: collapse !important;"
+                                        align="left" bgcolor="#FFF">
+                                        <table id="content-wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; border-collapse: collapse; border: 0; margin: 0; padding: 0; vertical-align: baseline; background-color: #fff !important;"
+                                            bgcolor="#fff !important" valign="baseline">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="font-size: 22px;padding-bottom: 30px;"><div>Logistics Insights Platform</div>
+                                                        <p style="font-size: 15px;">to me</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="font-size: 22px;padding-bottom: 50px;"><div>Dear Mr. Xhaqiri</div>
+                                                        <p style="font-size: 15px;">
+                                                            You have been invited to <a href="" >Logistics Insights Platform</a> by Mr. Sommer from HRS Holidings Ltd. Please click following link to
+                                                            onboard your company onto the platform and start tracking your materials during shipment and after installation.
+                                                        </p>
+
+                                                        <p style="font-size: 15px;">
+                                                            <a href="https://accounts.google.com/RecoverAccount?fpOnly=1&source=ancppe&Email=info_lip@selise.chm">
+                                                                https://accounts.google.com/RecoverAccount?fpOnly=1&source=ancppe&Email=info_lip@selise.chm
+                                                            </a>
+                                                        </p>
+
+                                                        <p style="font-size: 15px;">
+                                                            The invitation will remain valid for 24 hours.
+                                                        </p>
+
+                                                        <p style="font-size: 15px;">
+                                                            If you received this by mistake please contact us at <a href="mailto:info_lip@selise.ch" target="_top">info_lip@selise.ch</a>
+                                                        </p>
+
+                                                        <p style="font-size: 15px;">
+                                                            Thank you for choosing logistics insights platform! Checkout our other products at  <a href="www.smartcity.ch" target="_top">www.smartcity.ch</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="border-bottom: 1px solid rgba(0,0,0,0.1);padding-bottom: 15px;">
+                                                        <div style="float: left;">
+                                                            <a href="#">
+                                                                <img src="Amberg-Loglay-Logo.png" width="110" height="25" alt="AMBERG LOGLAY" style="margin-top: 10px;">
+                                                            </a>
+                                                        </div>
+                                                        <div style="float: right;">
+                                                            <a href="#">
+                                                                <img width="100" height="40" src="selise-logo.png" alt="SELISE">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                    </center>
+                </div>
+            </td>
+            <td style="hyphens: auto; padding: 0; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; text-align: left; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -ms-text-size-adjust: 100%; border-collapse: collapse !important;"
+                align="left"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
