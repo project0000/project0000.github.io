@@ -14,7 +14,7 @@
 </div>
 
 <script>
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngSanitize']);
 app.controller('myCtrl', function($scope) {
    $scope.obj = "";
    $scope.json = JSON.stringify($scope.obj, undefined, 4);
