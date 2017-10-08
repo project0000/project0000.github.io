@@ -5,18 +5,19 @@
 
 <div ng-app="myApp" ng-controller="myCtrl">
 
-First Name: <input type="text" ng-model="firstName"><br>
-Last Name: <input type="text" ng-model="lastName"><br>
-<br>
-Full Name: {{firstName + " " + lastName}}
+<textarea rows="4" cols="50" ng-model="pathText">
+
+</textarea>
+    
+    <h4>Output:</h4>
+	{{pathText}}
 
 </div>
 
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
+    $scope.pathText = "";
 });
 </script>
 
