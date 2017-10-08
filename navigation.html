@@ -19,7 +19,7 @@
 </div>
 
 <script>
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ng-material']);
 app.controller('myCtrl', function($scope) {
    $scope.convert = function(){
         var data = JSON.parse($scope.obj);
