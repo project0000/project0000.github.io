@@ -19,7 +19,7 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
    $scope.convert = function(){
-        $scope.result = JSON.stringify(JSON.stringify($scope.obj));
+        $scope.result = JSON.stringify($scope.obj);
    }   
 });
 </script>
